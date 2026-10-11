@@ -45,6 +45,6 @@ jobs:
         script: |
           docker stop spring-demo | true
           delete rm spring-demo | true
-          docker pull ${{secrets.DOCKERHUB_USERNAME}}/spring-boo-ci-demo:latest
+          docker pull ${{secrets.DOCKERHUB_USERNAME}}/spring-boot-ci-demo:latest
           docker run -d --name spring-demo -p 8081:8081 ${{secrets.DOCKERHUB_USERNAME}}/spring-boot-ci-demo:latest
           ls -al
