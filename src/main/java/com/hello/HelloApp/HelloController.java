@@ -9,6 +9,6 @@ public class HelloController {
 
     @GetMapping("/")
     public String helloApp(){
-        return "Hello from CI/CD Pipeline";
+        return "Hello from CI/CD Pipeline.....";
     }
 }
